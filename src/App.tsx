@@ -39,7 +39,7 @@ export default function App() {
             {/* Texture Overlays */}
             <div className="fixed inset-0 pointer-events-none opacity-[0.03] bg-[url('https://grainy-gradients.vercel.app/noise.svg')] z-0"></div>
             
-            <div className="relative z-10 min-h-screen flex flex-col pt-24 md:pt-32">
+            <div className="relative z-10 min-h-screen flex flex-col pt-20 md:pt-24">
               <Navbar />
               <Routes>
                 <Route path="/" element={<Home />} />

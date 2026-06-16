@@ -16,10 +16,10 @@ export default function Hero() {
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   return (
-    <section ref={ref} className="relative h-screen flex flex-col justify-center items-center overflow-hidden bg-bg-body pt-20">
+    <section ref={ref} className="relative min-h-[100vh] md:min-h-[108vh] flex flex-col justify-center items-center overflow-hidden bg-bg-body pt-28 pb-24 md:pb-36">
       <motion.div 
         style={{ y, opacity }}
-        className="w-full max-w-[1600px] h-full mx-auto flex justify-center items-center z-10 px-6 md:px-10"
+        className="w-full max-w-[1600px] mx-auto flex justify-center items-center z-10 px-6 md:px-10"
       >
         {/* Centered Brand Statement */}
         <div className="flex flex-col justify-center items-center text-center max-w-4xl w-full">

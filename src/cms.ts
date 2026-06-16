@@ -186,7 +186,7 @@ export const content = {
       cta: "Agendar Consultoria",
     },
     marquee: [
-      "Identidade Visual", "Social Media", "Posicionamento", "Premium Brands", "Elegant Design", "Estratégia Digital", "Corporate Clean"
+      "Identidade Visual", "Social Media", "Posicionamento", "Branding de Luxo", "Premium Brands", "Elegant Design", "Estratégia Digital", "Corporate Clean", "Luxury Experience"
     ],
     about: {
       label: "A Designer",
@@ -268,7 +268,7 @@ export const content = {
       cta: "Book Consultation",
     },
     marquee: [
-      "Visual Identity", "Social Media", "Positioning", "Premium Brands", "Elegant Design", "Digital Strategy", "Corporate Clean"
+      "Visual Identity", "Social Media", "Positioning", "Luxury Branding", "Premium Brands", "Elegant Design", "Digital Strategy", "Corporate Clean", "Luxury Experience"
     ],
     about: {
       label: "The Designer",

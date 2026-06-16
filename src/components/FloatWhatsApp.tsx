@@ -8,7 +8,7 @@ export default function FloatWhatsApp() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowBubble(true);
-    }, 1200);
+    }, 1000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -45,7 +45,7 @@ export default function FloatWhatsApp() {
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1, y: [0, -10, 0] }}
         transition={{ 
-          delay: 1.5, 
+          delay: 1.0, 
           duration: 0.5, 
           y: {
             duration: 2,
