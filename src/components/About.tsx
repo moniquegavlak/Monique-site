@@ -1,6 +1,7 @@
 import { motion, useMotionValue, useTransform, animate } from 'motion/react';
 import { useLanguage } from '../i18n';
 import { useEffect } from 'react';
+import { Award, GraduationCap } from 'lucide-react';
 
 function AnimatedCounter({ value, symbol }: { value: number, symbol?: string }) {
   const count = useMotionValue(0);
@@ -15,7 +16,7 @@ function AnimatedCounter({ value, symbol }: { value: number, symbol?: string }) 
 }
 
 export default function About() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
 
   return (
     <section id="about" className="py-24 md:py-32 px-6 md:px-12 max-w-[1600px] mx-auto z-10 relative">
@@ -83,6 +84,42 @@ export default function About() {
                 <p className="text-[12px] uppercase tracking-[0.2em] text-text-muted font-bold font-sans text-center md:text-left">{stat.label}</p>
               </div>
             ))}
+          </motion.div>
+
+          {/* Luxury Certification & Graduation Credentials */}
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.7, duration: 0.8 }}
+            className="mt-2 pt-6 border-t border-text-muted/10 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs tracking-wider"
+          >
+            <div className="flex items-center gap-3.5 bg-bg-warm-1/80 p-4 border border-terracotta/25 hover:border-terracotta/50 shadow-md transition-all duration-300 rounded-sm">
+              <div className="w-8 h-8 rounded-full bg-terracotta/10 text-terracotta flex items-center justify-center shrink-0">
+                <Award className="w-4.5 h-4.5" />
+              </div>
+              <div>
+                <p className="font-semibold text-text-main text-[11px] uppercase tracking-widest flex items-center gap-1.5">
+                  Inside LVMH Certificate <span className="text-terracotta animate-pulse">✦</span>
+                </p>
+                <p className="text-[10px] text-text-muted font-light mt-0.5">
+                  {lang === 'pt' ? 'Certificação de Mercado de Luxo' : 'Luxury Industry Specialization'}
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3.5 bg-bg-warm-1/80 p-4 border border-terracotta/25 hover:border-terracotta/50 shadow-md transition-all duration-300 rounded-sm">
+              <div className="w-8 h-8 rounded-full bg-terracotta/10 text-terracotta flex items-center justify-center shrink-0">
+                <GraduationCap className="w-4.5 h-4.5" />
+              </div>
+              <div>
+                <p className="font-semibold text-text-main text-[11px] uppercase tracking-widest flex items-center gap-1.5">
+                  {lang === 'pt' ? 'Formada em Design Gráfico' : 'Graphic Design Alumna'} <span className="text-terracotta animate-pulse">✦</span>
+                </p>
+                <p className="text-[10px] text-text-muted font-light mt-0.5">
+                  {lang === 'pt' ? 'MBA e pós-graduação' : 'MBA & Post-graduate specialization'}
+                </p>
+              </div>
+            </div>
           </motion.div>
         </div>
       </div>

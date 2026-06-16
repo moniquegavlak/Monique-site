@@ -38,7 +38,6 @@ export default function App() {
           <div className="min-h-screen relative font-sans overflow-hidden bg-bg-body text-text-main transition-colors duration-300">
             {/* Texture Overlays */}
             <div className="fixed inset-0 pointer-events-none opacity-[0.03] bg-[url('https://grainy-gradients.vercel.app/noise.svg')] z-0"></div>
-            <div className="fixed inset-0 pointer-events-none border-[10px] md:border-[20px] border-terracotta/5 z-50"></div>
             
             <div className="relative z-10 min-h-screen flex flex-col pt-24 md:pt-32">
               <Navbar />
