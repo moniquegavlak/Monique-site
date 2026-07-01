@@ -88,6 +88,24 @@ export const investment = {
 };
 export const caseStudies = [
   {
+    id: 'yaguar-branding',
+    title: 'YAGUAR',
+    category: 'Visual Identity & Art Direction',
+    description: 'O nome YAGUAR nasce da raiz etimológica indígena (do tupi-guarani yaguara), que significa "fera", e em uma interpretação folclórica e popular difundida ela significaria "aquela que mata com um salto". Essa origem ancestral foi traduzida para o posicionamento da marca de forma metafórica e poderosa: a mulher YAGUAR é aquela que domina qualquer ambiente no momento em que entra. Ela não precisa de excessos; sua presença é magnética, precisa e fatal.',
+    descriptionEn: 'The name YAGUAR is born from the indigenous etymological root (from Tupi-Guarani yaguara), which means "beast", and in a widespread popular and folkloric interpretation it means "she who kills with one leap". This ancestral origin was translated into the brand\'s positioning in a metaphorical and powerful way: the YAGUAR woman is the one who dominates any environment the moment she enters. She does not need excesses; her presence is magnetic, precise, and fatal.',
+    cover: 'https://static.wixstatic.com/media/c92460_d46428669e5c4876b3387a1a063a189e~mv2.png',
+    images: [
+      'https://static.wixstatic.com/media/c92460_d46428669e5c4876b3387a1a063a189e~mv2.png',
+      'https://static.wixstatic.com/media/c92460_83324b24c92944438113a67555a95cac~mv2.png',
+      'https://static.wixstatic.com/media/c92460_ee314c599342468eb3a5360b72c55584~mv2.png',
+      'https://static.wixstatic.com/media/c92460_5ca2baa1f5d9447aa4dd20863799b11b~mv2.png',
+      'https://static.wixstatic.com/media/c92460_c263aef7481d413c8fb8b31342b0ec5a~mv2.png',
+      'https://static.wixstatic.com/media/c92460_8548defa2e9a4fecad0f09d6ca2173c7~mv2.png',
+      'https://static.wixstatic.com/media/c92460_326b6537c75b45cb8a8af4006343118e~mv2.png',
+      'https://static.wixstatic.com/media/c92460_a453aa1058a543e79af1116ba5baecdc~mv2.png'
+    ]
+  },
+  {
     id: 'clinica-dermatologica',
     title: 'Clínica Dermatológica',
     category: 'Social Media',
