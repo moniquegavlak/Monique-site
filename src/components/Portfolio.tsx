@@ -17,7 +17,7 @@ const ParallaxCard: React.FC<{
   });
 
   // Parallax effect for the image
-  const y = useTransform(scrollYProgress, [0, 1], ["-15%", "15%"]);
+  const y = useTransform(scrollYProgress, [0, 1], ["-5%", "5%"]);
 
   return (
     <motion.div
@@ -31,7 +31,7 @@ const ParallaxCard: React.FC<{
     >
       <motion.div
         style={{ y }}
-        className="absolute inset-0 w-full h-[130%] -top-[15%]"
+        className="absolute inset-0 w-full h-[110%] -top-[5%]"
       >
         <img
           src={item.cover}
@@ -48,7 +48,7 @@ const ParallaxCard: React.FC<{
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 + index * 0.1 }}
-          className="text-[10px] md:text-xs uppercase tracking-[0.3em] text-terracotta mb-2 md:mb-3 font-bold drop-shadow-lg"
+          className="text-[10px] md:text-xs uppercase tracking-[0.3em] text-white mb-2 md:mb-3 font-bold drop-shadow-lg"
         >
           {item.category}
         </motion.p>
