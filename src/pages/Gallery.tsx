@@ -2,37 +2,21 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { useLanguage } from '../i18n';
 import { caseStudies } from '../cms';
-import { ChevronLeft, ChevronRight, X } from 'lucide-react';
+import { ChevronLeft, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Gallery() {
   const { lang, t } = useLanguage();
   const [selectedCase, setSelectedCase] = useState<typeof caseStudies[0] | null>(null);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const openProject = (project: typeof caseStudies[0]) => {
     setSelectedCase(project);
-    setCurrentImageIndex(0);
     document.body.style.overflow = 'hidden';
   };
 
   const closeProject = () => {
     setSelectedCase(null);
     document.body.style.overflow = 'auto';
-  };
-
-  const nextImage = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    if (selectedCase) {
-      setCurrentImageIndex((prev) => (prev + 1) % selectedCase.images.length);
-    }
-  };
-
-  const prevImage = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    if (selectedCase) {
-      setCurrentImageIndex((prev) => (prev === 0 ? selectedCase.images.length - 1 : prev - 1));
-    }
   };
 
   return (
@@ -75,9 +59,9 @@ export default function Gallery() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[100] bg-bg-body flex flex-col"
+            className="fixed inset-0 z-[100] bg-bg-body flex flex-col overflow-hidden"
           >
-            <div className="p-6 md:p-10 flex justify-between items-center border-b border-text-muted/20">
+            <div className="p-6 md:p-8 flex justify-between items-center border-b border-text-muted/20 bg-bg-body z-10 sticky top-0 shadow-sm shrink-0">
               <div>
                 <h3 className="text-2xl font-serif text-text-main">{selectedCase.title}</h3>
                 <span className="text-terracotta text-[10px] uppercase tracking-widest">{selectedCase.category}</span>
@@ -90,34 +74,31 @@ export default function Gallery() {
               </button>
             </div>
             
-            <div className="flex-1 flex flex-col md:flex-row relative overflow-hidden">
-              <div className="w-full md:w-1/4 p-6 md:p-10 overflow-y-auto border-r border-text-muted/20 bg-bg-warm-1">
-                <p className="text-text-muted text-sm leading-relaxed whitespace-pre-line">
+            <div className="flex-1 overflow-y-auto flex flex-col relative w-full items-center bg-bg-warm-1 pb-24">
+              <div className="w-full max-w-4xl p-6 md:p-12 md:py-16 text-center shrink-0">
+                <p className="text-text-main text-sm md:text-base leading-relaxed whitespace-pre-line mx-auto font-light max-w-3xl">
                   {lang === 'pt' ? selectedCase.description : selectedCase.descriptionEn}
                 </p>
-                <div className="mt-12 flex gap-4">
-                  <button onClick={prevImage} className="w-12 h-12 border border-terracotta rounded-full flex items-center justify-center text-terracotta hover:bg-terracotta hover:text-white transition-all">
-                    <ChevronLeft className="w-5 h-5" />
-                  </button>
-                  <button onClick={nextImage} className="w-12 h-12 border border-terracotta rounded-full flex items-center justify-center text-terracotta hover:bg-terracotta hover:text-white transition-all">
-                    <ChevronRight className="w-5 h-5" />
-                  </button>
-                </div>
-                <div className="mt-4 text-xs font-serif text-text-muted tracking-widest">
-                  {currentImageIndex + 1} / {selectedCase.images.length}
-                </div>
               </div>
 
-              <div className="w-full md:w-3/4 flex items-center justify-center bg-bg-warm-2 p-6 md:p-10 relative">
-                <motion.img 
-                  key={currentImageIndex}
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5 }}
-                  src={selectedCase.images[currentImageIndex]} 
-                  alt={`${selectedCase.title} - ${currentImageIndex + 1}`}
-                  className="max-w-full max-h-[80vh] object-contain shadow-2xl"
-                />
+              <div className="flex flex-col w-full md:px-0 max-w-6xl mx-auto gap-0">
+                {selectedCase.images.map((image, idx) => (
+                  <motion.div
+                    key={idx}
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-10%" }}
+                    transition={{ duration: 0.7, ease: "easeOut" }}
+                    className="w-full flex justify-center"
+                  >
+                    <img 
+                      src={image} 
+                      alt={`${selectedCase.title} - ${idx + 1}`}
+                      className="max-w-full w-full object-cover bg-bg-warm-2"
+                      loading="lazy"
+                    />
+                  </motion.div>
+                ))}
               </div>
             </div>
           </motion.div>

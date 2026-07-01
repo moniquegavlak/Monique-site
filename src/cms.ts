@@ -106,6 +106,20 @@ export const caseStudies = [
     ]
   },
   {
+    id: 'yuzu-pink-branding',
+    title: 'YUZU PINK',
+    category: 'Branding & Visual Identity',
+    description: 'Yuzu Pink é inspirada na energia das ruas de Tóquio e na refrescância única da fruta yuzu, a identidade visual une a nostalgia lúdica da pixel art com a atitude kawaii atual.',
+    descriptionEn: 'Yuzu Pink is inspired by the energy of the streets of Tokyo and the unique freshness of the yuzu fruit, the visual identity unites the playful nostalgia of pixel art with the current kawaii attitude.',
+    cover: 'https://static.wixstatic.com/media/c92460_5417d91ddce947dca99f6ad1e37687e8~mv2.png',
+    images: [
+      'https://static.wixstatic.com/media/c92460_5417d91ddce947dca99f6ad1e37687e8~mv2.png',
+      'https://static.wixstatic.com/media/c92460_3da69fac38984aa1b5de88c24393ba61~mv2.png',
+      'https://static.wixstatic.com/media/c92460_077efd08a3294ef997455e88da08e250~mv2.png',
+      'https://static.wixstatic.com/media/c92460_4308dc61c34b4b40a69f26a4be392112~mv2.png'
+    ]
+  },
+  {
     id: 'clinica-dermatologica',
     title: 'Clínica Dermatológica',
     category: 'Social Media',
