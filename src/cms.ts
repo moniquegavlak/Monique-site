@@ -198,6 +198,38 @@ export const caseStudies = [
       'https://static.wixstatic.com/media/c92460_ada5c02e920748648ed3470262047837~mv2.png',
       'https://static.wixstatic.com/media/c92460_6e2dcc1fd5044432b0afc250ef68c638~mv2.png'
     ]
+  },
+  {
+    id: 'a-e-h-advocacia',
+    title: 'A&H Advocacia',
+    category: 'Identidade Visual',
+    description: 'Angioletti & Heindrickson Advogados Associados foi fundada por Eliete Angioletti e Crislaine Heindrickson, destacando-se pelo atendimento humanizado e soluções jurídicas personalizadas.',
+    descriptionEn: 'Angioletti & Heindrickson Advogados Associados was founded by Eliete Angioletti and Crislaine Heindrickson, standing out for its humanized service and personalized legal solutions.',
+    cover: 'https://static.wixstatic.com/media/c92460_991d9cf1278640beac8c72b3484dc1a6~mv2.jpg',
+    images: [
+      'https://static.wixstatic.com/media/c92460_991d9cf1278640beac8c72b3484dc1a6~mv2.jpg',
+      'https://static.wixstatic.com/media/c92460_c1f1ea881f9d489f82408f04b9dbf9ee~mv2.jpg',
+      'https://static.wixstatic.com/media/c92460_5fdf097ecde5434bb9311ad991270e88~mv2.jpg',
+      'https://static.wixstatic.com/media/c92460_7f9c1b025b9947f38be0ecd059dbf539~mv2.jpg',
+      'https://static.wixstatic.com/media/c92460_43cf0e08932e4d8abdf099586bf1834f~mv2.jpg',
+      'https://static.wixstatic.com/media/c92460_5511b2cfa23f4caf80b1b82d78c41161~mv2.jpg',
+      'https://static.wixstatic.com/media/c92460_21c77b28eba74125b8aed75324db5bb4~mv2.jpg'
+    ]
+  },
+  {
+    id: 'hosana-fotografia',
+    title: 'Hosana Fotografia',
+    category: 'Identidade Visual',
+    description: 'A Hosana Fotografia nasce com o propósito de transformar momentos em arte e criar conexões através da fotografia. Com um olhar sensível e técnico, a marca busca eternizar histórias em imagens que carregam emoção, beleza e significado.',
+    descriptionEn: 'Hosana Photography is born with the purpose of transforming moments into art and creating connections through photography. With a sensitive and technical eye, the brand seeks to immortalize stories in images that carry emotion, beauty, and meaning.',
+    cover: 'https://static.wixstatic.com/media/c92460_5c22d23612414e17a2770afde13dfb8f~mv2.jpg',
+    images: [
+      'https://static.wixstatic.com/media/c92460_5c22d23612414e17a2770afde13dfb8f~mv2.jpg',
+      'https://static.wixstatic.com/media/c92460_9c9f60865c9f4c558b0301b9cf0a8c66~mv2.jpg',
+      'https://static.wixstatic.com/media/c92460_d77c3c5755de43ea8ef4d1c91c979a8a~mv2.jpg',
+      'https://static.wixstatic.com/media/c92460_36d965d3225c4e6fb58bde1e568ac6cb~mv2.jpg',
+      'https://static.wixstatic.com/media/c92460_ab2628eeffa142e68639131613c2fbb3~mv2.jpg'
+    ]
   }
 ];
 

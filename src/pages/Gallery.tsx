@@ -59,9 +59,9 @@ export default function Gallery() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[100] bg-bg-body flex flex-col overflow-hidden"
+            className="fixed inset-0 z-[9999] bg-bg-body flex flex-col overflow-hidden"
           >
-            <div className="p-6 md:p-8 flex justify-between items-center border-b border-text-muted/20 bg-bg-body z-10 sticky top-0 shadow-sm shrink-0">
+            <div className="p-6 md:p-8 flex justify-between items-center border-b border-text-muted/20 bg-bg-body z-50 sticky top-0 shadow-sm shrink-0">
               <div>
                 <h3 className="text-2xl font-serif text-text-main">{selectedCase.title}</h3>
                 <span className="text-terracotta text-[10px] uppercase tracking-widest">{selectedCase.category}</span>
