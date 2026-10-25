@@ -16,7 +16,7 @@ export default function Hero() {
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   return (
-    <section ref={ref} className="relative min-h-[100vh] md:min-h-[108vh] flex flex-col justify-center items-center overflow-hidden bg-bg-body pt-28 pb-24 md:pb-36">
+    <section ref={ref} className="relative min-h-[88vh] md:min-h-[92vh] flex flex-col justify-center items-center overflow-hidden bg-bg-body pt-8 md:pt-12 pb-20 md:pb-28">
       <motion.div 
         style={{ y, opacity }}
         className="w-full max-w-[1600px] mx-auto flex justify-center items-center z-10 px-6 md:px-10"

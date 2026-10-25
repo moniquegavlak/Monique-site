@@ -89,12 +89,18 @@ export default function Navbar() {
 
       {/* Mobile Menu Content */}
       {mobileMenuOpen && (
-        <div className={`md:hidden absolute top-full left-0 w-full bg-bg-body/95 border-b border-text-main/10 py-8 px-6 flex flex-col gap-8 text-[11px] uppercase tracking-widest backdrop-blur-md shadow-xl text-center`}>
+        <div className={`md:hidden absolute top-full left-0 w-full bg-bg-body/95 border-b border-text-main/10 py-8 px-6 flex flex-col gap-6 text-[11px] uppercase tracking-widest backdrop-blur-md shadow-xl text-center`}>
           <Link to="/#about" onClick={() => setMobileMenuOpen(false)} className="hover:text-terracotta transition-colors">{t.nav.about}</Link>
           <Link to="/#services" onClick={() => setMobileMenuOpen(false)} className="hover:text-terracotta transition-colors">{t.nav.services}</Link>
+          <Link to="/gallery" onClick={() => setMobileMenuOpen(false)} className="hover:text-terracotta transition-colors">{t.portfolio.viewGallery}</Link>
           <Link to="/#portfolio" onClick={() => setMobileMenuOpen(false)} className="hover:text-terracotta transition-colors">{t.nav.portfolio}</Link>
           <Link to="/#investment" onClick={() => setMobileMenuOpen(false)} className="hover:text-terracotta transition-colors">{t.nav.investment}</Link>
           <Link to="/#contact" onClick={() => setMobileMenuOpen(false)} className="hover:text-terracotta transition-colors">{t.nav.contact}</Link>
+          <div className="pt-4 border-t border-text-main/10 flex justify-center">
+            <Link to="/cookies" onClick={() => setMobileMenuOpen(false)} className="text-[10px] text-terracotta hover:underline">
+              {lang === 'pt' ? 'Política de Cookies' : 'Cookie Policy'}
+            </Link>
+          </div>
         </div>
       )}
     </motion.nav>

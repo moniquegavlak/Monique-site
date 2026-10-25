@@ -1,6 +1,8 @@
 {
-  "name": "",
-  "description": "",
+  "name": "Monique Gavlak Design",
+  "description": "Visual Strategist & Premium Brand Manager - Identidade visual de alto padrão, branding exclusivo e estratégias de posicionamento de marca.",
   "requestFramePermissions": [],
-  "majorCapabilities": []
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

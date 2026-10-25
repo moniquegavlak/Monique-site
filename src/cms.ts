@@ -11,16 +11,16 @@ export const investment = {
         packages: [
           { name: "Essential", description: "Para marcas que precisam de constância.", features: ["Estratégia Social Media", "4 posts", "Design & Copy", "Foto de Perfil", "Agendamento de posts"] },
           { name: "Signature", bestSeller: true, description: "Crescimento e posicionamento.", features: ["Estratégia Social Media", "8 posts", "Design & Copy", "Foto de Perfil", "Agendamento de posts"] },
-          { name: "Elite", description: "Full-service exclusivo.", features: ["Estratégia Social Media", "16 posts", "Design & Copy", "Foto de Perfil", "Agendamento de posts", "Edição de Reels", "Suporte Prioritário"] }
+          { name: "Elite", description: "Full-service exclusivo.", features: ["Estratégia Social Media", "14 posts", "2 edições de Reels", "5 Fotos de Produto Hiper-Realista com IA", "Design & Copy", "Foto de Perfil", "Agendamento de posts"] }
         ]
       },
       {
         title: "Identidade Visual",
         subtitle: "Construa uma marca inesquecível",
         packages: [
-          { name: "Select", description: "Essencialidade e clareza.", features: ["Logo Principal", "Paleta de cores", "Tipografia", "Foto de perfil personalizada"] },
-          { name: "Advanced", bestSeller: true, description: "Evolução visual.", features: ["Logo Principal", "Logo alternativa", "Paleta de cores", "Tipografia", "Foto de perfil personalizada", "Manual de Marca", "1 Aplicação"] },
-          { name: "Prestige", description: "Universo visual completo.", features: ["Logo Principal", "Logo alternativa", "Paleta de cores", "Tipografia", "Foto de perfil personalizada", "Manual de Marca", "Pattern, ilustração ou personagem", "3 aplicações"] }
+          { name: "Select", description: "Essencialidade e clareza.", features: ["Logo Principal", "Paleta de cores", "Tipografia", "Foto de perfil personalizada", "1 Foto de Produto Hiper-Realista com IA"] },
+          { name: "Advanced", bestSeller: true, description: "Evolução visual.", features: ["Logo Principal", "Logo alternativa", "Paleta de cores", "Tipografia", "Foto de perfil personalizada", "Manual de Marca", "1 Aplicação", "5 Fotos de Produto Hiper-Realista com IA"] },
+          { name: "Prestige", description: "Universo visual completo.", features: ["Logo Principal", "Logo alternativa", "Paleta de cores", "Tipografia", "Foto de perfil personalizada", "Manual de Marca", "Pattern, ilustração ou personagem", "3 aplicações", "10 Fotos de Produto Hiper-Realista com IA"] }
         ]
       },
       {
@@ -33,11 +33,11 @@ export const investment = {
         ]
       },
       {
-        title: "High-End Retouching",
-        subtitle: "Pós-Produção Premium",
+        title: "Estúdio Fotográfico de IA",
+        subtitle: "Produção Fotográfica Virtual Hiper-Realista",
         packages: [
-          { name: "Correction", description: "Aprimoramento técnico.", features: ["Correção de cor/luz", "Limpeza de fundo", "Ajuste de nitidez", "Tratamento de pele natural"] },
-          { name: "Creative Manipulation", bestSeller: true, description: "Transformação completa.", features: ["Remoção de pessoas/objetos", "Fusão de imagens", "Color Grading", "Criação de ambiência"] },
+          { name: "Creative Manipulation", description: "Transformação completa.", features: ["Remoção de pessoas/objetos", "Fusão de imagens", "Color Grading", "Criação de ambiência"] },
+          { name: "Fotografia de Produto com IA", bestSeller: true, description: "Fotos profissionais de catálogo sem necessidade de ensaio presencial, com estética 100% natural.", features: ["Realismo fotográfico absoluto", "Nitidez extrema e texturas ricas", "Iluminação de estúdio profissional", "Qualidade e entrega em 2K", "Direção de arte e cenários personalizados"] },
           { name: "Restoration", description: "Recuperação de memórias.", features: ["Restauração", "Colorização digital", "Reconstrução", "Upscaling IA"] }
         ]
       }
@@ -53,16 +53,16 @@ export const investment = {
         packages: [
           { name: "Essential", description: "For brands that need consistency.", features: ["Social Media Strategy", "4 posts", "Design & Copy", "Profile Picture", "Post Scheduling"] },
           { name: "Signature", bestSeller: true, description: "Growth and positioning.", features: ["Social Media Strategy", "8 posts", "Design & Copy", "Profile Picture", "Post Scheduling"] },
-          { name: "Elite", description: "Exclusive full-service.", features: ["Social Media Strategy", "16 posts", "Design & Copy", "Profile Picture", "Post Scheduling", "Reels Editing", "Priority Support"] }
+          { name: "Elite", description: "Exclusive full-service.", features: ["Social Media Strategy", "14 posts", "2 Reels edits", "5 Hyper-Realistic AI Product Photos", "Design & Copy", "Profile Picture", "Post Scheduling"] }
         ]
       },
       {
         title: "Visual Identity",
         subtitle: "Build an unforgettable brand",
         packages: [
-          { name: "Select", description: "Essentiality and clarity.", features: ["Main Logo", "Color Palette", "Typography", "Custom Profile Picture"] },
-          { name: "Advanced", bestSeller: true, description: "Visual evolution.", features: ["Main Logo", "Alternative Logo", "Color Palette", "Typography", "Custom Profile Picture", "Brand Manual", "1 Application"] },
-          { name: "Prestige", description: "Complete visual universe.", features: ["Main Logo", "Alternative Logo", "Color Palette", "Typography", "Custom Profile Picture", "Brand Manual", "Pattern, illustration or mascot", "3 Applications"] }
+          { name: "Select", description: "Essentiality and clarity.", features: ["Main Logo", "Color Palette", "Typography", "Custom Profile Picture", "1 Hyper-Realistic AI Product Photo"] },
+          { name: "Advanced", bestSeller: true, description: "Visual evolution.", features: ["Main Logo", "Alternative Logo", "Color Palette", "Typography", "Custom Profile Picture", "Brand Manual", "1 Application", "5 Hyper-Realistic AI Product Photos"] },
+          { name: "Prestige", description: "Complete visual universe.", features: ["Main Logo", "Alternative Logo", "Color Palette", "Typography", "Custom Profile Picture", "Brand Manual", "Pattern, illustration or mascot", "3 Applications", "10 Hyper-Realistic AI Product Photos"] }
         ]
       },
       {
@@ -75,11 +75,11 @@ export const investment = {
         ]
       },
       {
-        title: "High-End Retouching",
-        subtitle: "Premium Post-Production",
+        title: "AI Photography Studio",
+        subtitle: "Hyper-Realistic Virtual Photographic Production",
         packages: [
-          { name: "Correction", description: "Technical enhancement.", features: ["Color/light correction", "Background cleanup", "Sharpness adjustment", "Natural skin treatment"] },
-          { name: "Creative Manipulation", bestSeller: true, description: "Complete transformation.", features: ["People/object removal", "Image fusion", "Color Grading", "Environment creation"] },
+          { name: "Creative Manipulation", description: "Complete transformation.", features: ["People/object removal", "Image fusion", "Color Grading", "Environment creation"] },
+          { name: "AI Product Photography", bestSeller: true, description: "High-end commercial photos without live shoots, with 100% natural studio realism.", features: ["Absolute photographic realism", "Extreme sharpness & rich textures", "Professional studio lighting", "2K resolution delivery", "Custom art direction & tailored sets"] },
           { name: "Restoration", description: "Memory recovery.", features: ["Restoration", "Digital colorization", "Reconstruction", "AI Upscaling"] }
         ]
       }
@@ -297,8 +297,8 @@ export const content = {
           description: "Consultoria para alinhar sua comunicação visual ao público de alto padrão que você deseja atingir."
         },
         {
-          title: "Ilustração, Retouch & IA",
-          description: "Ilustração Vetorial, High-End Retouching, Aprimoramento de Imagens com IA para elevar o nível das suas fotos e produtos."
+          title: "Ilustração & Estúdio Fotográfico IA",
+          description: "Ilustração Vetorial, Produção Fotográfica Virtual Hiper-Realista e Fotografia de Produto com IA para elevar seus produtos ao padrão editorial."
         }
       ]
     },
@@ -313,7 +313,17 @@ export const content = {
       button: "Fale comigo no WhatsApp",
     },
     footer: {
-      rights: "Visual Strategist and Premium Brand Manager | © 2026 Monique Gavlak. All rights reserved."
+      rights: "Visual Strategist and Premium Brand Manager | © 2026 Monique Gavlak. All rights reserved.",
+      cookies: "Política de Cookies",
+      privacy: "Privacidade",
+      terms: "Termos de Uso",
+      navigation: "Navegação",
+      contact: "Contato",
+      quickLinks: "Links Rápidos",
+      home: "Início",
+      gallery: "Galeria de Projetos",
+      services: "Soluções & Serviços",
+      preferences: "Preferências de Cookies"
     }
   },
   en: {
@@ -379,8 +389,8 @@ export const content = {
           description: "Consulting to align your visual communication with the high-end audience you wish to target."
         },
         {
-          title: "Illustration, Retouch & AI",
-          description: "Vector Illustration, High-End Retouching, AI Image Enhancement to elevate the level of your photos and products."
+          title: "Illustration & AI Photo Studio",
+          description: "Vector Illustration, Hyper-Realistic Virtual Photographic Production, and AI Product Photography to elevate your brand imagery."
         }
       ]
     },
@@ -395,7 +405,17 @@ export const content = {
       button: "Message me on WhatsApp",
     },
     footer: {
-      rights: "Visual Strategist and Premium Brand Manager | © 2026 Monique Gavlak. All rights reserved."
+      rights: "Visual Strategist and Premium Brand Manager | © 2026 Monique Gavlak. All rights reserved.",
+      cookies: "Cookie Policy",
+      privacy: "Privacy",
+      terms: "Terms of Use",
+      navigation: "Navigation",
+      contact: "Contact",
+      quickLinks: "Quick Links",
+      home: "Home",
+      gallery: "Project Gallery",
+      services: "Solutions & Services",
+      preferences: "Cookie Preferences"
     }
   }
 };
