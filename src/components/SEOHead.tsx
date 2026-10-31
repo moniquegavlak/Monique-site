@@ -17,19 +17,38 @@ export default function SEOHead() {
     if (isCookies) {
       title = lang === 'pt' 
         ? 'Política de Cookies | Monique Gavlak Design' 
+        : lang === 'es'
+        ? 'Política de Cookies | Monique Gavlak Design'
         : 'Cookie Policy | Monique Gavlak Design';
       description = lang === 'pt'
         ? 'Política de Cookies da Monique Gavlak Design. Saiba como utilizamos cookies para personalizar sua experiência, em conformidade com a LGPD e GDPR.'
+        : lang === 'es'
+        ? 'Política de Cookies de Monique Gavlak Design. Conozca cómo utilizamos cookies para personalizar su experiencia, en conformidad con normativas de privacidad.'
         : 'Cookie Policy for Monique Gavlak Design Studio. Learn how we use cookies to provide a refined browsing experience in compliance with LGPD and GDPR.';
       canonical = 'https://www.moniquegavlak.com/cookies';
     } else if (isGallery) {
       title = lang === 'pt'
         ? 'Galeria de Projetos | Monique Gavlak Design'
+        : lang === 'es'
+        ? 'Galería de Proyectos | Monique Gavlak Design'
         : 'Project Gallery | Monique Gavlak Design';
       description = lang === 'pt'
         ? 'Conheça o portfólio completo de identidade visual, direção de arte e branding de alto padrão por Monique Gavlak.'
+        : lang === 'es'
+        ? 'Descubra el portafolio completo de identidad visual, dirección de arte y branding de alto estándar por Monique Gavlak.'
         : 'Explore the full portfolio of high-end visual identities, art direction, and branding by Monique Gavlak.';
       canonical = 'https://www.moniquegavlak.com/gallery';
+    } else {
+      title = lang === 'pt'
+        ? 'Monique Gavlak Design | Visual Strategist & Brand Manager'
+        : lang === 'es'
+        ? 'Monique Gavlak Design | Estratega Visual y Gestión de Marca'
+        : 'Monique Gavlak Design | Visual Strategist & Brand Manager';
+      description = lang === 'pt'
+        ? 'Visual Strategist & Premium Brand Manager - Identidade visual de alto padrão, branding exclusivo e estratégias de posicionamento de marca.'
+        : lang === 'es'
+        ? 'Estratega Visual y Gestión de Marca Premium - Identidad visual de alto estándar, branding exclusivo y posicionamiento estratégico.'
+        : 'Visual Strategist & Premium Brand Manager - High-end visual identity, bespoke branding and strategic positioning.';
     }
 
     // Update title
@@ -81,7 +100,7 @@ export default function SEOHead() {
         'name': title,
         'url': 'https://www.moniquegavlak.com/cookies',
         'description': description,
-        'inLanguage': lang === 'pt' ? 'pt-BR' : 'en-US',
+        'inLanguage': lang === 'pt' ? 'pt-BR' : lang === 'es' ? 'es-ES' : 'en-US',
         'isPartOf': {
           '@type': 'WebSite',
           'name': 'Monique Gavlak Design',

@@ -109,7 +109,7 @@ export default function About() {
                   Inside LVMH Certificate <span className="text-terracotta animate-pulse">✦</span>
                 </p>
                 <p className="text-[10px] text-text-main font-medium opacity-90 mt-1 leading-snug">
-                  {lang === 'pt' ? 'Certificação de Mercado de Luxo' : 'Luxury Market Certification'}
+                  {lang === 'pt' ? 'Certificação de Mercado de Luxo' : lang === 'es' ? 'Certificación de Mercado de Lujo' : 'Luxury Market Certification'}
                 </p>
               </div>
             </motion.div>
@@ -132,10 +132,10 @@ export default function About() {
               </div>
               <div>
                 <p className="font-semibold text-text-main text-[11px] uppercase tracking-widest flex items-center gap-1.5 leading-none">
-                  {lang === 'pt' ? 'Formada em Design Gráfico' : 'Graphic Design Alumna'} <span className="text-terracotta animate-pulse">✦</span>
+                  {lang === 'pt' ? 'Formada em Design Gráfico' : lang === 'es' ? 'Graduada en Diseño Gráfico' : 'Graphic Design Alumna'} <span className="text-terracotta animate-pulse">✦</span>
                 </p>
                 <p className="text-[10px] text-text-main font-medium opacity-90 mt-1 leading-snug">
-                  {lang === 'pt' ? 'MBA e pós-graduação' : 'MBA & Postgraduate Degree'}
+                  {lang === 'pt' ? 'MBA e pós-graduação' : lang === 'es' ? 'MBA y Posgrado' : 'MBA & Postgraduate Degree'}
                 </p>
               </div>
             </motion.div>

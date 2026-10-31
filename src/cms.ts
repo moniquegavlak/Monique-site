@@ -1,4 +1,4 @@
-export type Language = 'pt' | 'en';
+export type Language = 'pt' | 'en' | 'es';
 
 export const investment = {
   pt: {
@@ -11,16 +11,16 @@ export const investment = {
         packages: [
           { name: "Essential", description: "Para marcas que precisam de constância.", features: ["Estratégia Social Media", "4 posts", "Design & Copy", "Foto de Perfil", "Agendamento de posts"] },
           { name: "Signature", bestSeller: true, description: "Crescimento e posicionamento.", features: ["Estratégia Social Media", "8 posts", "Design & Copy", "Foto de Perfil", "Agendamento de posts"] },
-          { name: "Elite", description: "Full-service exclusivo.", features: ["Estratégia Social Media", "14 posts", "2 edições de Reels", "5 Fotos de Produto Hiper-Realista com IA", "Design & Copy", "Foto de Perfil", "Agendamento de posts"] }
+          { name: "Elite", description: "Full-service exclusivo.", features: ["Estratégia Social Media", "14 posts", "2 edições de Reels", "5 Fotos de Estúdio com IA Hiper-Realista", "Design & Copy", "Foto de Perfil", "Agendamento de posts"] }
         ]
       },
       {
         title: "Identidade Visual",
         subtitle: "Construa uma marca inesquecível",
         packages: [
-          { name: "Select", description: "Essencialidade e clareza.", features: ["Logo Principal", "Paleta de cores", "Tipografia", "Foto de perfil personalizada", "1 Foto de Produto Hiper-Realista com IA"] },
-          { name: "Advanced", bestSeller: true, description: "Evolução visual.", features: ["Logo Principal", "Logo alternativa", "Paleta de cores", "Tipografia", "Foto de perfil personalizada", "Manual de Marca", "1 Aplicação", "5 Fotos de Produto Hiper-Realista com IA"] },
-          { name: "Prestige", description: "Universo visual completo.", features: ["Logo Principal", "Logo alternativa", "Paleta de cores", "Tipografia", "Foto de perfil personalizada", "Manual de Marca", "Pattern, ilustração ou personagem", "3 aplicações", "10 Fotos de Produto Hiper-Realista com IA"] }
+          { name: "Select", description: "Essencialidade e clareza.", features: ["Logo Principal", "Paleta de cores", "Tipografia", "Foto de perfil personalizada", "1 Foto de Estúdio com IA Hiper-Realista"] },
+          { name: "Advanced", bestSeller: true, description: "Evolução visual.", features: ["Logo Principal", "Logo alternativa", "Paleta de cores", "Tipografia", "Foto de perfil personalizada", "Manual de Marca", "1 Aplicação", "5 Fotos de Estúdio com IA Hiper-Realista"] },
+          { name: "Prestige", description: "Universo visual completo.", features: ["Logo Principal", "Logo alternativa", "Paleta de cores", "Tipografia", "Foto de perfil personalizada", "Manual de Marca", "Pattern, ilustração ou personagem", "3 aplicações", "10 Fotos de Estúdio com IA Hiper-Realista"] }
         ]
       },
       {
@@ -53,16 +53,16 @@ export const investment = {
         packages: [
           { name: "Essential", description: "For brands that need consistency.", features: ["Social Media Strategy", "4 posts", "Design & Copy", "Profile Picture", "Post Scheduling"] },
           { name: "Signature", bestSeller: true, description: "Growth and positioning.", features: ["Social Media Strategy", "8 posts", "Design & Copy", "Profile Picture", "Post Scheduling"] },
-          { name: "Elite", description: "Exclusive full-service.", features: ["Social Media Strategy", "14 posts", "2 Reels edits", "5 Hyper-Realistic AI Product Photos", "Design & Copy", "Profile Picture", "Post Scheduling"] }
+          { name: "Elite", description: "Exclusive full-service.", features: ["Social Media Strategy", "14 posts", "2 Reels edits", "5 Hyper-Realistic AI Studio Photos", "Design & Copy", "Profile Picture", "Post Scheduling"] }
         ]
       },
       {
         title: "Visual Identity",
         subtitle: "Build an unforgettable brand",
         packages: [
-          { name: "Select", description: "Essentiality and clarity.", features: ["Main Logo", "Color Palette", "Typography", "Custom Profile Picture", "1 Hyper-Realistic AI Product Photo"] },
-          { name: "Advanced", bestSeller: true, description: "Visual evolution.", features: ["Main Logo", "Alternative Logo", "Color Palette", "Typography", "Custom Profile Picture", "Brand Manual", "1 Application", "5 Hyper-Realistic AI Product Photos"] },
-          { name: "Prestige", description: "Complete visual universe.", features: ["Main Logo", "Alternative Logo", "Color Palette", "Typography", "Custom Profile Picture", "Brand Manual", "Pattern, illustration or mascot", "3 Applications", "10 Hyper-Realistic AI Product Photos"] }
+          { name: "Select", description: "Essentiality and clarity.", features: ["Main Logo", "Color Palette", "Typography", "Custom Profile Picture", "1 Hyper-Realistic AI Studio Photo"] },
+          { name: "Advanced", bestSeller: true, description: "Visual evolution.", features: ["Main Logo", "Alternative Logo", "Color Palette", "Typography", "Custom Profile Picture", "Brand Manual", "1 Application", "5 Hyper-Realistic AI Studio Photos"] },
+          { name: "Prestige", description: "Complete visual universe.", features: ["Main Logo", "Alternative Logo", "Color Palette", "Typography", "Custom Profile Picture", "Brand Manual", "Pattern, illustration or mascot", "3 Applications", "10 Hyper-Realistic AI Studio Photos"] }
         ]
       },
       {
@@ -84,6 +84,48 @@ export const investment = {
         ]
       }
     ]
+  },
+  es: {
+    label: "Inversión",
+    title: "Paquetes Exclusivos",
+    categories: [
+      {
+        title: "Social Media",
+        subtitle: "Paquetes exclusivos de gestión",
+        packages: [
+          { name: "Essential", description: "Para marcas que necesitan constancia.", features: ["Estrategia de Social Media", "4 publicaciones", "Diseño & Copy", "Foto de Perfil", "Programación de publicaciones"] },
+          { name: "Signature", bestSeller: true, description: "Crecimiento y posicionamiento.", features: ["Estrategia de Social Media", "8 publicaciones", "Diseño & Copy", "Foto de Perfil", "Programación de publicaciones"] },
+          { name: "Elite", description: "Servicio integral exclusivo.", features: ["Estrategia de Social Media", "14 publicaciones", "2 ediciones de Reels", "5 Fotos de Estudio con IA Hiper-Realista", "Diseño & Copy", "Foto de Perfil", "Programación de publicaciones"] }
+        ]
+      },
+      {
+        title: "Identidad Visual",
+        subtitle: "Construye una marca inolvidable",
+        packages: [
+          { name: "Select", description: "Esencialidad y claridad.", features: ["Logotipo Principal", "Paleta de colores", "Tipografía", "Foto de perfil personalizada", "1 Foto de Estudio con IA Hiper-Realista"] },
+          { name: "Advanced", bestSeller: true, description: "Evolución visual.", features: ["Logotipo Principal", "Logotipo alternativo", "Paleta de colores", "Tipografía", "Foto de perfil personalizada", "Manual de Marca", "1 Aplicación", "5 Fotos de Estudio con IA Hiper-Realista"] },
+          { name: "Prestige", description: "Universo visual completo.", features: ["Logotipo Principal", "Logotipo alternativo", "Paleta de colores", "Tipografía", "Foto de perfil personalizada", "Manual de Marca", "Pattern, ilustración o personaje", "3 aplicaciones", "10 Fotos de Estudio con IA Hiper-Realista"] }
+        ]
+      },
+      {
+        title: "Ilustración Vectorial",
+        subtitle: "Arte & Exclusividad",
+        packages: [
+          { name: "Bespoke Assets", description: "Elementos visuales exclusivos.", features: ["Creación de iconos", "Mascotas y Personajes", "Elementos de soporte", "Entrega en vector"] },
+          { name: "Patterns & Surface", bestSeller: true, description: "Estampados de alto estándar.", features: ["Estampados continuos/localizados", "Patterns para empaques", "Armonía cromática", "Entrega en vector"] },
+          { name: "Editorial", description: "Narrativas visuales.", features: ["Ilustración para libros/revistas", "Portadas", "Infografías", "Dirección de arte", "Entrega en vector"] }
+        ]
+      },
+      {
+        title: "Estudio Fotográfico de IA",
+        subtitle: "Producción Fotográfica Virtual Hiper-Realista",
+        packages: [
+          { name: "Creative Manipulation", description: "Transformación completa.", features: ["Eliminación de personas/objetos", "Fusión de imágenes", "Color Grading", "Creación de atmósferas"] },
+          { name: "Fotografía de Producto con IA", bestSeller: true, description: "Fotos profesionales de catálogo sin necesidad de sesión presencial, con estética 100% natural.", features: ["Realismo fotográfico absoluto", "Nitidez extrema y texturas ricas", "Iluminación de estudio profesional", "Calidad y entrega en 2K", "Dirección de arte y escenarios personalizados"] },
+          { name: "Restoration", description: "Recuperación de memorias.", features: ["Restauración", "Colorización digital", "Reconstrucción", "Upscaling IA"] }
+        ]
+      }
+    ]
   }
 };
 export const caseStudies = [
@@ -93,6 +135,7 @@ export const caseStudies = [
     category: 'Visual Identity & Art Direction',
     description: 'O nome YAGUAR nasce da raiz etimológica indígena (do tupi-guarani yaguara), que significa "fera", e em uma interpretação folclórica e popular difundida ela significaria "aquela que mata com um salto". Essa origem ancestral foi traduzida para o posicionamento da marca de forma metafórica e poderosa: a mulher YAGUAR é aquela que domina qualquer ambiente no momento em que entra. Ela não precisa de excessos; sua presença é magnética, precisa e fatal.',
     descriptionEn: 'The name YAGUAR is born from the indigenous etymological root (from Tupi-Guarani yaguara), which means "beast", and in a widespread popular and folkloric interpretation it means "she who kills with one leap". This ancestral origin was translated into the brand\'s positioning in a metaphorical and powerful way: the YAGUAR woman is the one who dominates any environment the moment she enters. She does not need excesses; her presence is magnetic, precise, and fatal.',
+    descriptionEs: 'El nombre YAGUAR nace de la raíz etimológica indígena (del tupí-guaraní yaguara), que significa "fiera", y en una interpretación folclórica y popular difundida significaría "aquella que mata de un salto". Este origen ancestral se tradujo al posicionamiento de la marca de forma metafórica y poderosa: la mujer YAGUAR es aquella que domina cualquier entorno desde el instante en que entra. No necesita excesos; su presencia es magnética, precisa y fatal.',
     cover: 'https://static.wixstatic.com/media/c92460_d46428669e5c4876b3387a1a063a189e~mv2.png',
     images: [
       'https://static.wixstatic.com/media/c92460_d46428669e5c4876b3387a1a063a189e~mv2.png',
@@ -111,6 +154,7 @@ export const caseStudies = [
     category: 'Branding & Visual Identity',
     description: 'Yuzu Pink é inspirada na energia das ruas de Tóquio e na refrescância única da fruta yuzu, a identidade visual une a nostalgia lúdica da pixel art com a atitude kawaii atual.',
     descriptionEn: 'Yuzu Pink is inspired by the energy of the streets of Tokyo and the unique freshness of the yuzu fruit, the visual identity unites the playful nostalgia of pixel art with the current kawaii attitude.',
+    descriptionEs: 'Inspirada en la energía de las calles de Tokio y en la frescura única de la fruta yuzu, la identidad visual une la nostalgia lúdica del pixel art con la actitud kawaii contemporánea.',
     cover: 'https://static.wixstatic.com/media/c92460_5417d91ddce947dca99f6ad1e37687e8~mv2.png',
     images: [
       'https://static.wixstatic.com/media/c92460_5417d91ddce947dca99f6ad1e37687e8~mv2.png',
@@ -125,6 +169,7 @@ export const caseStudies = [
     category: 'Social Media',
     description: 'Gestão estratégica de redes sociais focada em transmitir a pureza e a seriedade da dermatologia, combinando tons suaves com tipografia clínica moderna.',
     descriptionEn: 'Strategic social media management focused on conveying the purity and seriousness of dermatology, combining soft tones with modern clinical typography.',
+    descriptionEs: 'Gestión estratégica de redes sociales enfocada en transmitir la pureza y seriedad de la dermatología, combinando tonos suaves con tipografía clínica moderna.',
     cover: 'https://static.wixstatic.com/media/c92460_16a8aebf27d743cf8b9417b07fd6e53e~mv2.png',
     images: [
       'https://static.wixstatic.com/media/c92460_16a8aebf27d743cf8b9417b07fd6e53e~mv2.png',
@@ -138,6 +183,7 @@ export const caseStudies = [
     category: 'Rebranding',
     description: 'Um rebranding completo que posiciona a profissional como referência em acolhimento e técnica.',
     descriptionEn: 'A complete rebranding that positions the professional as a reference in warmth and technique.',
+    descriptionEs: 'Un rebranding integral que posiciona a la profesional como referente en calidez humana y técnica.',
     cover: 'https://static.wixstatic.com/media/c92460_89a833311e80423ba99392e3d6cc5ff2~mv2.jpg',
     images: [
       'https://static.wixstatic.com/media/c92460_89a833311e80423ba99392e3d6cc5ff2~mv2.jpg',
@@ -150,6 +196,7 @@ export const caseStudies = [
     category: 'Identidade Visual',
     description: 'A Essência Jewelry nasce da intersecção entre a riqueza natural do Brasil e o design minimalista contemporâneo.',
     descriptionEn: 'Essência Jewelry is born from the intersection of Brazil\'s natural richness and contemporary minimalist design.',
+    descriptionEs: 'Essência Jewelry nace en la intersección entre la riqueza natural de Brasil y el diseño minimalista contemporáneo.',
     cover: 'https://static.wixstatic.com/media/c92460_c6c987f7eda840c3b7a2becc3db8fcb7~mv2.png',
     images: [
       'https://static.wixstatic.com/media/c92460_c6c987f7eda840c3b7a2becc3db8fcb7~mv2.png',
@@ -168,6 +215,7 @@ export const caseStudies = [
     category: 'Social Media',
     description: 'Posicionamento digital para advocacia moderna.',
     descriptionEn: 'Digital positioning for modern law practice.',
+    descriptionEs: 'Posicionamiento digital para la abogacía contemporánea.',
     cover: 'https://static.wixstatic.com/media/c92460_b46951af909c4c67aad8f70a142b4793~mv2.png',
     images: [
       'https://static.wixstatic.com/media/c92460_b46951af909c4c67aad8f70a142b4793~mv2.png',
@@ -182,6 +230,7 @@ export const caseStudies = [
     category: 'Identidade Visual',
     description: 'Uma identidade visual que funde a precisão matemática da Proporção Áurea com a sofisticação do \'Quiet Luxury\', criando uma marca sensorial e atemporal.',
     descriptionEn: 'A visual identity that merges the mathematical precision of the Golden Ratio with the sophistication of \'Quiet Luxury\', creating a sensory and timeless brand.',
+    descriptionEs: 'Una identidad visual que fusiona la precisión matemática de la Proporción Áurea con la sofisticación del "Quiet Luxury", creando una marca sensorial y atemporal.',
     cover: 'https://static.wixstatic.com/media/c92460_8d0a7c41a00e44d0a0841f9e3586a437~mv2.png',
     images: [
       'https://static.wixstatic.com/media/c92460_8d0a7c41a00e44d0a0841f9e3586a437~mv2.png',
@@ -205,6 +254,7 @@ export const caseStudies = [
     category: 'Identidade Visual',
     description: 'Angioletti & Heindrickson Advogados Associados foi fundada por Eliete Angioletti e Crislaine Heindrickson, destacando-se pelo atendimento humanizado e soluções jurídicas personalizadas.',
     descriptionEn: 'Angioletti & Heindrickson Advogados Associados was founded by Eliete Angioletti and Crislaine Heindrickson, standing out for its humanized service and personalized legal solutions.',
+    descriptionEs: 'Angioletti & Heindrickson Advogados Associados fue fundada por Eliete Angioletti y Crislaine Heindrickson, destacándose por su atención humanizada y soluciones jurídicas personalizadas.',
     cover: 'https://static.wixstatic.com/media/c92460_991d9cf1278640beac8c72b3484dc1a6~mv2.jpg',
     images: [
       'https://static.wixstatic.com/media/c92460_991d9cf1278640beac8c72b3484dc1a6~mv2.jpg',
@@ -222,6 +272,7 @@ export const caseStudies = [
     category: 'Identidade Visual',
     description: 'A Hosana Fotografia nasce com o propósito de transformar momentos em arte e criar conexões através da fotografia. Com um olhar sensível e técnico, a marca busca eternizar histórias em imagens que carregam emoção, beleza e significado.',
     descriptionEn: 'Hosana Photography is born with the purpose of transforming moments into art and creating connections through photography. With a sensitive and technical eye, the brand seeks to immortalize stories in images that carry emotion, beauty, and meaning.',
+    descriptionEs: 'Hosana Fotografia nace con el propósito de transformar momentos en arte y crear conexiones a través de la fotografía. Con una mirada sensible y técnica, la marca busca inmortalizar historias en imágenes que transmiten emoción, belleza y significado.',
     cover: 'https://static.wixstatic.com/media/c92460_5c22d23612414e17a2770afde13dfb8f~mv2.jpg',
     images: [
       'https://static.wixstatic.com/media/c92460_5c22d23612414e17a2770afde13dfb8f~mv2.jpg',
@@ -416,6 +467,98 @@ export const content = {
       gallery: "Project Gallery",
       services: "Solutions & Services",
       preferences: "Cookie Preferences"
+    }
+  },
+  es: {
+    nav: {
+      about: "Experiencia",
+      services: "Soluciones",
+      portfolio: "Portafolio",
+      investment: "Inversión",
+      contact: "Consultoría",
+    },
+    hero: {
+      eyebrow: "Strategic Elegance",
+      titleItalic: "Estrategia y Estética",
+      titleRest: "para Marcas Líderes",
+      description: "El estudio Monique Gavlak Design se especializa en Identidad Visual, Redes Sociales y Dirección de Arte para marcas que buscan excelencia y sofisticación.",
+      cta: "Agendar Consultoría",
+    },
+    marquee: [
+      "Identidad Visual", "Social Media", "Posicionamiento", "Branding de Lujo", "Marcas Premium", "Diseño Elegante", "Estrategia Digital", "Corporate Clean", "Experiencia de Lujo"
+    ],
+    about: {
+      label: "La Diseñadora",
+      title: "Monique Gavlak",
+      description: "Especialista en crear atmósferas visuales que comunican valor, exclusividad y excelencia. Mi objetivo es transformar la esencia de su marca en un diseño que no solo atrae, sino que fascina a clientes premium.",
+      stats: [
+        { value: 5, label: "años de experiencia", symbol: "+" },
+        { value: 100, label: "marcas transformadas", symbol: "+" },
+        { value: 100, label: "Alcance remoto y global", symbol: "%" },
+      ]
+    },
+    specialties: {
+      label: "Especialidades",
+      items: [
+        {
+          title: "I. Curaduría Visual",
+          description: "Dirección Artística & Conceptual. Definición precisa del tono de voz para transmitir autoridad."
+        },
+        {
+          title: "II. Narrativa Estratégica",
+          description: "Estructuración de narrativas que comunican misión y valores, creando vínculos emocionales profundos."
+        },
+        {
+          title: "III. Growth & Performance",
+          description: "Análisis de métricas y datos para asegurar un crecimiento real y enfocado en la conversión."
+        }
+      ]
+    },
+    services: {
+      label: "Servicios",
+      title: "Soluciones a Medida",
+      subtitle: "Aplicando diseño para consolidar posicionamientos sólidos y de alto impacto.",
+      items: [
+        {
+          title: "Identidad Visual",
+          description: "Creación de logotipos, paletas de colores, tipografía y directrices completas de marca que expresan sofisticación."
+        },
+        {
+          title: "Diseño para Redes Sociales",
+          description: "Plantillas, cuadrículas y dirección de arte para redes sociales que posicionan a su marca como referente y líder."
+        },
+        {
+          title: "Posicionamiento Estratégico",
+          description: "Consultoría para alinear su comunicación visual con la audiencia de alto estándar que desea alcanzar."
+        },
+        {
+          title: "Ilustración & Estudio Fotográfico IA",
+          description: "Ilustración Vectorial, Producción Fotográfica Virtual Hiper-Realista y Fotografía de Producto con IA para elevar sus productos al nivel editorial."
+        }
+      ]
+    },
+    portfolio: {
+      title: "Visual Curation | Explorar proyectos",
+      viewGallery: "Galería de Proyectos"
+    },
+    contact: {
+      label: "Let's Talk",
+      title: "¿Vamos a crear algo extraordinario?",
+      description: "Usted merece un diseño que comunique el verdadero valor y prestigio de su negocio.",
+      button: "Hablemos por WhatsApp",
+    },
+    footer: {
+      rights: "Visual Strategist and Premium Brand Manager | © 2026 Monique Gavlak. Todos los derechos reservados.",
+      cookies: "Política de Cookies",
+      privacy: "Privacidad",
+      terms: "Términos de Uso",
+      navigation: "Navegación",
+      contact: "Contacto",
+      quickLinks: "Enlaces Rápidos",
+      home: "Inicio",
+      gallery: "Galería de Proyectos",
+      services: "Soluciones & Servicios",
+      preferences: "Preferencias de Cookies"
     }
   }
 };

@@ -176,6 +176,8 @@ export default function Portfolio() {
                 <p className="text-text-main text-sm md:text-base leading-relaxed whitespace-pre-line mx-auto font-light max-w-3xl">
                   {lang === "pt"
                     ? selectedCase.description
+                    : lang === "es"
+                    ? (selectedCase.descriptionEs || selectedCase.description)
                     : selectedCase.descriptionEn}
                 </p>
               </div>

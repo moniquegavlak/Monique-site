@@ -31,6 +31,8 @@ export default function Footer() {
             <p className="text-xs md:text-sm text-text-muted font-light max-w-md leading-relaxed">
               {lang === 'pt'
                 ? 'Especialista em Identidade Visual, Social Media e Direção Artística de alto padrão. Posicionamento estratégico para marcas líderes e exclusivas.'
+                : lang === 'es'
+                ? 'Especialista en Identidad Visual, Redes Sociales y Dirección Artística de alto estándar. Posicionamiento estratégico para marcas líderes y exclusivas.'
                 : 'Specialist in high-end Visual Identity, Social Media curation, and Art Direction for premier brands.'}
             </p>
             <div className="pt-2 flex items-center gap-4 text-xs font-medium text-terracotta">
@@ -49,12 +51,12 @@ export default function Footer() {
           {/* Site Navigation Links */}
           <div className="space-y-3">
             <h4 className="text-[11px] uppercase tracking-[0.25em] font-bold text-terracotta">
-              {lang === 'pt' ? 'Navegação' : 'Navigation'}
+              {lang === 'pt' ? 'Navegação' : lang === 'es' ? 'Navegación' : 'Navigation'}
             </h4>
             <ul className="space-y-2.5 text-xs text-text-muted font-light">
               <li>
                 <Link to="/" className="hover:text-terracotta transition-colors">
-                  {lang === 'pt' ? 'Página Inicial' : 'Home'}
+                  {lang === 'pt' ? 'Página Inicial' : lang === 'es' ? 'Página Principal' : 'Home'}
                 </Link>
               </li>
               <li>
@@ -89,7 +91,7 @@ export default function Footer() {
           <div className="space-y-3">
             <h4 className="text-[11px] uppercase tracking-[0.25em] font-bold text-terracotta flex items-center gap-1.5">
               <ShieldCheck className="w-3.5 h-3.5" />
-              {lang === 'pt' ? 'Privacidade & LGPD' : 'Privacy & Legal'}
+              {lang === 'pt' ? 'Privacidade & LGPD' : lang === 'es' ? 'Privacidad & Legal' : 'Privacy & Legal'}
             </h4>
             <ul className="space-y-2.5 text-xs text-text-muted font-light">
               <li>
@@ -98,7 +100,7 @@ export default function Footer() {
                   className="font-medium text-text-main hover:text-terracotta transition-colors inline-flex items-center gap-1.5"
                 >
                   <Cookie className="w-3.5 h-3.5 text-terracotta" />
-                  <span>{lang === 'pt' ? 'Política de Cookies' : 'Cookie Policy'}</span>
+                  <span>{lang === 'pt' ? 'Política de Cookies' : lang === 'es' ? 'Política de Cookies' : 'Cookie Policy'}</span>
                 </Link>
               </li>
               <li>
@@ -106,7 +108,7 @@ export default function Footer() {
                   onClick={handleOpenCookiePreferences}
                   className="hover:text-terracotta transition-colors text-left text-xs"
                 >
-                  {lang === 'pt' ? 'Gerenciar Preferências de Cookies' : 'Manage Cookie Preferences'}
+                  {lang === 'pt' ? 'Gerenciar Preferências de Cookies' : lang === 'es' ? 'Gestionar Preferencias de Cookies' : 'Manage Cookie Preferences'}
                 </button>
               </li>
               <li className="pt-2 text-[11px] text-text-muted opacity-70">
@@ -129,7 +131,7 @@ export default function Footer() {
           </div>
           <div className="flex items-center gap-6">
             <Link to="/cookies" className="hover:text-terracotta transition-colors">
-              {lang === 'pt' ? 'Política de Cookies' : 'Cookie Policy'}
+              {lang === 'pt' ? 'Política de Cookies' : lang === 'es' ? 'Política de Cookies' : 'Cookie Policy'}
             </Link>
             <span>•</span>
             <Link to="/" className="hover:text-terracotta transition-colors">

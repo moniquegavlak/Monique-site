@@ -24,7 +24,7 @@ export default function Gallery() {
       <div className="mb-16">
         <Link to="/" className="inline-flex items-center gap-2 hover:text-terracotta transition-colors mb-8 font-medium">
           <ChevronLeft className="w-4 h-4" />
-          {lang === 'pt' ? 'Voltar para Início' : 'Back to Home'}
+          {lang === 'pt' ? 'Voltar para Início' : lang === 'es' ? 'Volver al Inicio' : 'Back to Home'}
         </Link>
         <h1 className="text-4xl md:text-6xl font-serif mb-4 text-text-main">{t.portfolio.viewGallery}</h1>
         <div className="w-24 h-[1px] bg-terracotta"></div>
@@ -77,7 +77,7 @@ export default function Gallery() {
             <div className="flex-1 overflow-y-auto flex flex-col relative w-full items-center bg-bg-warm-1 pb-24">
               <div className="w-full max-w-4xl p-6 md:p-12 md:py-16 text-center shrink-0">
                 <p className="text-text-main text-sm md:text-base leading-relaxed whitespace-pre-line mx-auto font-light max-w-3xl">
-                  {lang === 'pt' ? selectedCase.description : selectedCase.descriptionEn}
+                  {lang === 'pt' ? selectedCase.description : lang === 'es' ? (selectedCase.descriptionEs || selectedCase.description) : selectedCase.descriptionEn}
                 </p>
               </div>
 

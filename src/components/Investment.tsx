@@ -78,7 +78,13 @@ export default function Investment() {
                     </ul>
                     
                     <a 
-                      href={`https://api.whatsapp.com/send/?phone=%2B5541985035027&text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20uma%20proposta%20para%20o%20pacote%20${pkg.name}&type=phone_number&app_absent=0`} 
+                      href={`https://api.whatsapp.com/send/?phone=%2B5541985035027&text=${encodeURIComponent(
+                        lang === 'pt'
+                          ? `Olá, gostaria de solicitar uma proposta para o pacote ${pkg.name}`
+                          : lang === 'es'
+                          ? `Hola, me gustaría solicitar una propuesta para el paquete ${pkg.name}`
+                          : `Hello, I would like to request a proposal for the ${pkg.name} package`
+                      )}&type=phone_number&app_absent=0`} 
                       target="_blank"
                       rel="noopener noreferrer"
                       className={`mt-8 flex justify-center items-center gap-2 py-3 px-6 rounded-full text-[10px] uppercase tracking-widest font-bold transition-all w-full text-center relative overflow-hidden group/btn ${
@@ -90,7 +96,9 @@ export default function Investment() {
                       {pkg.bestSeller && (
                         <span className="absolute inset-0 bg-white/20 translate-y-full group-hover/btn:translate-y-0 transition-transform duration-300 pointer-events-none rounded-full"></span>
                       )}
-                      <span className="relative z-10">{lang === 'pt' ? 'Solicitar proposta' : 'Request Proposal'}</span>
+                      <span className="relative z-10">
+                        {lang === 'pt' ? 'Solicitar proposta' : lang === 'es' ? 'Solicitar propuesta' : 'Request Proposal'}
+                      </span>
                     </a>
                   </motion.div>
                 ))}

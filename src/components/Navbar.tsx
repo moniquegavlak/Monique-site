@@ -29,10 +29,6 @@ export default function Navbar() {
     }
   }, [location]);
 
-  const toggleLang = () => {
-    setLang(lang === 'pt' ? 'en' : 'pt');
-  };
-
   return (
     <motion.nav 
       initial={{ y: -100 }}
@@ -55,25 +51,57 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex items-center gap-4">
-          <button onClick={toggleTheme} className="p-2 hover:bg-terracotta/10 rounded-full transition-colors text-text-main">
+          <button onClick={toggleTheme} className="p-2 hover:bg-terracotta/10 rounded-full transition-colors text-text-main" aria-label="Toggle theme">
             {theme === 'light' ? <Moon className="w-4 h-4" /> : <Sun className="w-4 h-4" />}
           </button>
-          <button onClick={toggleLang} className="flex border border-text-main/10 rounded-full px-4 py-1.5 text-[10px] uppercase font-bold tracking-widest hover:bg-terracotta/5 transition-colors">
-            <span className={`pr-4 border-r border-text-main/10 transition-opacity ${lang === 'pt' ? 'opacity-100 text-terracotta' : 'opacity-30'}`}>PT</span>
-            <span className={`pl-4 transition-opacity ${lang === 'en' ? 'opacity-100 text-terracotta' : 'opacity-30'}`}>EN</span>
-          </button>
+          <div className="flex border border-text-main/15 rounded-full p-0.5 text-[10px] uppercase font-bold tracking-widest bg-bg-warm-1/40">
+            <button 
+              onClick={() => setLang('pt')} 
+              className={`px-3 py-1 rounded-full transition-all duration-200 ${lang === 'pt' ? 'bg-terracotta text-white shadow-sm' : 'opacity-60 hover:opacity-100 text-text-main'}`}
+            >
+              PT
+            </button>
+            <button 
+              onClick={() => setLang('en')} 
+              className={`px-3 py-1 rounded-full transition-all duration-200 ${lang === 'en' ? 'bg-terracotta text-white shadow-sm' : 'opacity-60 hover:opacity-100 text-text-main'}`}
+            >
+              EN
+            </button>
+            <button 
+              onClick={() => setLang('es')} 
+              className={`px-3 py-1 rounded-full transition-all duration-200 ${lang === 'es' ? 'bg-terracotta text-white shadow-sm' : 'opacity-60 hover:opacity-100 text-text-main'}`}
+            >
+              ES
+            </button>
+          </div>
         </div>
 
         {/* Mobile Nav Toggle */}
-        <div className="md:hidden flex items-center gap-3">
-          <button onClick={toggleTheme} className="p-2 hover:bg-terracotta/10 rounded-full transition-colors text-text-main">
+        <div className="md:hidden flex items-center gap-2">
+          <button onClick={toggleTheme} className="p-1.5 hover:bg-terracotta/10 rounded-full transition-colors text-text-main" aria-label="Toggle theme">
             {theme === 'light' ? <Moon className="w-4 h-4" /> : <Sun className="w-4 h-4" />}
           </button>
-          <button onClick={toggleLang} className="flex border border-text-main/10 rounded-full px-3 py-1.5 text-[10px] uppercase font-bold tracking-widest">
-            <span className={`pr-2 border-r border-text-main/10 transition-opacity ${lang === 'pt' ? 'opacity-100 text-terracotta' : 'opacity-30'}`}>PT</span>
-            <span className={`pl-2 transition-opacity ${lang === 'en' ? 'opacity-100 text-terracotta' : 'opacity-30'}`}>EN</span>
-          </button>
-          <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="w-10 h-10 flex flex-col justify-center items-center gap-1.5 cursor-pointer group">
+          <div className="flex border border-text-main/15 rounded-full p-0.5 text-[9px] uppercase font-bold tracking-wider bg-bg-warm-1/40">
+            <button 
+              onClick={() => setLang('pt')} 
+              className={`px-1.5 py-0.5 rounded-full transition-all duration-200 ${lang === 'pt' ? 'bg-terracotta text-white' : 'opacity-60 hover:opacity-100 text-text-main'}`}
+            >
+              PT
+            </button>
+            <button 
+              onClick={() => setLang('en')} 
+              className={`px-1.5 py-0.5 rounded-full transition-all duration-200 ${lang === 'en' ? 'bg-terracotta text-white' : 'opacity-60 hover:opacity-100 text-text-main'}`}
+            >
+              EN
+            </button>
+            <button 
+              onClick={() => setLang('es')} 
+              className={`px-1.5 py-0.5 rounded-full transition-all duration-200 ${lang === 'es' ? 'bg-terracotta text-white' : 'opacity-60 hover:opacity-100 text-text-main'}`}
+            >
+              ES
+            </button>
+          </div>
+          <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="w-9 h-9 flex flex-col justify-center items-center gap-1.5 cursor-pointer group" aria-label="Menu">
             {mobileMenuOpen ? (
               <X className="w-6 h-6" />
             ) : (
@@ -98,7 +126,7 @@ export default function Navbar() {
           <Link to="/#contact" onClick={() => setMobileMenuOpen(false)} className="hover:text-terracotta transition-colors">{t.nav.contact}</Link>
           <div className="pt-4 border-t border-text-main/10 flex justify-center">
             <Link to="/cookies" onClick={() => setMobileMenuOpen(false)} className="text-[10px] text-terracotta hover:underline">
-              {lang === 'pt' ? 'Política de Cookies' : 'Cookie Policy'}
+              {lang === 'pt' ? 'Política de Cookies' : lang === 'es' ? 'Política de Cookies' : 'Cookie Policy'}
             </Link>
           </div>
         </div>

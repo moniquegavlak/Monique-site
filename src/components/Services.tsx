@@ -5,7 +5,7 @@ export default function Services() {
   const { t } = useLanguage();
 
   return (
-    <section id="services" className="py-24 md:py-32 z-10 relative bg-bg-warm-1 text-text-main border-y border-terracotta/10">
+    <section id="services" className="pt-24 md:pt-32 pb-8 md:pb-12 z-10 relative bg-bg-body text-text-main border-t border-terracotta/10">
       <div className="max-w-[1600px] mx-auto px-6 md:px-12">
         <div className="mb-16 md:mb-24 flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
           <div>
